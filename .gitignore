@@ -1,0 +1,10 @@
+credentials.env
+.env
+local/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+runs/
+.idea/
+.vscode/
