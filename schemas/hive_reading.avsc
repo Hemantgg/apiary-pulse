@@ -1,0 +1,17 @@
+{
+  "type": "record",
+  "name": "HiveReading",
+  "namespace": "io.apiarypulse",
+  "doc": "Single hive sensor snapshot from an edge gateway (MQTT-class payload shape).",
+  "fields": [
+    { "name": "reading_id", "type": "string" },
+    { "name": "hive_id", "type": "string" },
+    { "name": "apiary_id", "type": "string" },
+    { "name": "gateway_id", "type": "string" },
+    { "name": "observed_at", "type": { "type": "long", "logicalType": "timestamp-millis" } },
+    { "name": "weight_kg", "type": "double" },
+    { "name": "temp_c", "type": "double" },
+    { "name": "humidity_pct", "type": "double" },
+    { "name": "activity_count", "type": "int", "default": 0 }
+  ]
+}

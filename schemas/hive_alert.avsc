@@ -1,0 +1,17 @@
+{
+  "type": "record",
+  "name": "HiveAlert",
+  "namespace": "io.apiarypulse",
+  "doc": "Rule-based alert emitted when hive telemetry crosses safe operating bands.",
+  "fields": [
+    { "name": "alert_id", "type": "string" },
+    { "name": "hive_id", "type": "string" },
+    { "name": "apiary_id", "type": "string" },
+    { "name": "alert_type", "type": "string" },
+    { "name": "severity", "type": "string" },
+    { "name": "triggered_at", "type": { "type": "long", "logicalType": "timestamp-millis" } },
+    { "name": "summary", "type": "string" },
+    { "name": "weight_delta_kg", "type": ["null", "double"], "default": null },
+    { "name": "window_minutes", "type": ["null", "int"], "default": null }
+  ]
+}
