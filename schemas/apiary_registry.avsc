@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "ApiaryRegistry",
+  "namespace": "io.apiarypulse",
+  "doc": "Slow-changing registry row for an apiary / hive (enrichment dimension).",
+  "fields": [
+    { "name": "hive_id", "type": "string" },
+    { "name": "apiary_id", "type": "string" },
+    { "name": "apiary_name", "type": "string" },
+    { "name": "region", "type": "string" },
+    { "name": "baseline_weight_kg", "type": "double" },
+    { "name": "updated_at", "type": { "type": "long", "logicalType": "timestamp-millis" } }
+  ]
+}
